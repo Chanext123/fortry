@@ -1,0 +1,127 @@
+/* ========= media query ======= */
+
+@media only screen and (max-width: 768px) {
+    .container {
+        display: flex;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .navbar .navbar__left .searchbox {
+        background: transparent;
+        width: auto;
+        padding: 0;
+        margin-left: 10px;
+    }
+    .navbar .navbar__left .searchbox input {
+        width: 0;
+        padding: 0;
+    }
+
+    .searchbox input {
+        width: 0;
+        padding: 0;
+    }
+
+    .navbar .navbar__center ul li a {
+        padding-right: 0;
+        margin: 5px;
+    }
+
+    .container {
+        padding: 15px 35;
+    }
+
+    .container .container__left-sidebar,
+    .container__right-sidebar {
+        flex-basis: 100%;
+        position: relative;
+        top: unset;
+    }
+
+    .container__main-content {
+        flex-basis: 100%;
+    }
+    .post-stats div {
+        margin: 2px 0;
+    }
+    .post-activity span {
+        display: none;
+    }
+
+    .post-activity img {
+        margin-right: 0;
+    }
+
+    .navbar .navbar__center {
+        display: none;
+    }
+
+    .navbar #hamburger-icon {
+        display: block;
+    }
+
+    .navbar .icon_left_right {
+        .icon-line {
+            display: flex;
+        }
+    }
+
+    .container {
+        .profile--box,
+        .left-sidebar__latestPost,
+        .left-sidebar__likedPost,
+        .reminder,
+        .iconSocial,
+        .right-sidebar--upcomingEvents,
+        .left-sidebar__companyLink,
+        .toggleDarkLight,
+        .container__main-content {
+            display: none;
+        }
+    }
+
+    // =============== for footer ================
+    .footer {
+        display: block;
+        .icon_left_right {
+            .icon-line {
+                display: flex;
+
+                .icon {
+                    width: 10px;
+                    i {
+                        font-size: 15px;
+                        padding: 0;
+                        margin: 0;
+                    }
+                }
+
+                .toggle {
+                    #light,
+                    #dark {
+                        width: 25px;
+                    }
+                }
+            }
+        }
+    }
+
+    .container .container__left-sidebar .left-sidebar__latestPost, .profile--box{
+        margin-bottom: 600px;
+        // align-items: center;
+    }
+
+    .container .left-sidebar__likedPost {
+        margin-bottom: 600px;
+    }
+
+    .container .container__right-sidebar .right-sidebar--upcomingEvents
+   {
+        margin: 100% 0px;
+        margin-top: -10px;
+    }
+
+    .container .container__right-sidebar .left-sidebar__companyLink {
+        margin-bottom: 500px;
+    }
+}

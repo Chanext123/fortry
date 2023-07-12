@@ -1,0 +1,205 @@
+.dark-theme {
+    $bgd: #18191a;
+    $whited: #242526;
+    $linktext: #18191a;
+    $button_seeall: #888;
+    $titles: #000;
+    $white: #fff;
+    $line: #ccc;
+    $navbar_boxShadow: rgba(0, 0, 0, 0.1);
+    $btn_bg: #7d00d3;
+    $bg_searchBar: #f5f2f2;
+    $box-shadow_inset: rgba(0, 0, 0, 0.4);
+
+    .container,
+    .navbar,
+    .navbar__center,
+    .navbar__left,
+    .profile--box,
+    .profile--info,
+    .left-sidebar__latestPost,
+    .left-sidebar__likedPost,
+    .reminder,
+    .container__right-sidebar,
+    .right-sidebar--upcomingEvents,
+    .left-sidebar__companyLink,
+    .toggleDarkLight,
+    .container__main-content,
+    .create-post,
+    .post,
+    
+    .navbar {
+        background-color: $whited;
+
+        .icon_left_right .icon-line{
+            background: $whited;
+        }
+
+        #hamburger-icon div {
+            background-color: $white;
+        }
+
+        #hamburger-icon .mobile-menu {
+            background: $titles;
+
+            li {
+                background: $whited;
+
+                a {
+                    color: $white;
+                }
+            }
+        }
+    }
+
+    .container {
+        background-color: $bgd;
+        color: $white;
+    }
+
+    .container .container__main-content {
+        background: $bgd;
+    }
+
+    .container__right-sidebar {
+        background: $bgd;
+        color: $white;
+    }
+    .navbar__center ul li a {
+        color: $white;
+    }
+    .container__left-sidebar {
+        .profile--box {
+            .profile--info {
+                border-radius: 10px;
+                h1 {
+                    color: $white;
+                }
+                hr {
+                    height: 1px;
+                    background: $bgd;
+                }
+                a {
+                    color: $white;
+                }
+                img {
+                    background: $whited;
+                }
+            }
+        }
+    }
+    .left-sidebar__latestPost {
+        h3 {
+            color: $white;
+        }
+        a {
+            color: $white;
+        }
+        .line_latesPost {
+            border-top: 2px solid $bgd;
+        }
+    }
+
+    .left-sidebar__likedPost {
+        h3 {
+            color: $white;
+        }
+        a {
+            color: $white;
+        }
+        .line_likedPost {
+            border-top: 2px solid $bgd;
+        }
+    }
+    .reminder {
+        .closeReminderbtn {
+            color: $white;
+        }
+        .closeReminderbtn:hover {
+            color: $btn_bg;
+        }
+    }
+
+    .container__right-sidebar {
+        .right-sidebar--upcomingEvents {
+            h3 {
+                color: $white;
+            }
+            small{
+                color: $white;
+            }
+        }
+
+        .left-sidebar__companyLink{
+            h3{
+                color: $white;
+            }
+            a{
+                color: $white;
+            }
+        }
+
+        .toggleDarkLight  {
+            h3{
+                color: $white;
+            }
+        }
+    }
+
+    .container__main-content {
+        .searchbox{
+            background: $whited;
+            input{
+                color: $white;
+            }
+
+        }
+        ::placeholder{
+            color: $button_seeall;
+        }
+
+        .find{
+            button{
+                background: $whited;
+                color: white;
+            }
+        }
+
+        .post{
+            h1,p {
+                color: $white;
+            }
+            .post_hours{
+                color: $button_seeall;
+            }
+
+            .post_caption {
+                border-top: 2px solid $bgd;
+
+            }
+
+            .post-stats{
+                border-bottom: 2px solid $bgd;
+
+            }
+            h5 {
+                color: $line;
+                font-weight: 400;
+                border: 2px solid $bgd;
+
+            }
+            .your-comment {
+                font-weight: bold;
+                color: $line;
+                margin-right: 10px;
+            }
+        }
+    }
+
+
+    .footer .icon_left_right, .icon-line{
+        background: $whited;
+    }
+    
+    
+}
